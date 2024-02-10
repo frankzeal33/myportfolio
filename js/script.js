@@ -96,6 +96,7 @@ window.addEventListener('scroll', () => {
     handleScroll();
     
     navbar.classList.remove('active');
+    times.classList.remove('active');
 
     //Scrolling Button Btn
     if(this.scrollY > 1000){
