@@ -80,7 +80,7 @@ h2{
 /* header */
 .bars{
     color: var(--color-white);
-    font-size: 20px;
+    font-size: 25px;
     position: absolute;
     right: 1rem;
     top: 1rem;
@@ -94,8 +94,8 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 .bars .fa-times{
@@ -1258,7 +1258,7 @@ main{
 
      .topheader{
         height: 50vh;
-        padding-top: 9%;
+        padding-top: 10%;
     }
 }
 
@@ -1388,7 +1388,7 @@ main{
     }
 
     .topheader{
-        padding-top: 18%;
+        padding-top: 20%;
     }
 
     #services .box-container{
