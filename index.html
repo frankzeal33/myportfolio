@@ -1,338 +1,561 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Complete Responsive Personal Portfolio Website Design</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRANKZEAL PORTFOLIO</title>
 
-   <!-- font awesome cdn link  -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-   <!-- aos css link  -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-   <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
-<!-- header section starts  -->
+    <div class="bars">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-times"></i>
+    </div>
 
-<header class="header">
+    <header class="desktop">
+        <nav>
+            <ul id="mainnav" class="nav flex">
+                <li>
+                    <a href="#aboutme" class="activenav">
+                        <i class="fa-solid fa-house"></i>
+                        <span>About Me</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#experience">
+                        <i class="fa-regular fa-eye"></i>
+                        <span>Experience</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#education">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span>Education</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#skills">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span>Skills</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#portfolio">
+                        <i class="fa-solid fa-gem"></i>
+                        <span>Portfolio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#services">
+                        <i class="fa-brands fa-servicestack"></i>
+                        <span>Services</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#footer">
+                        <i class="fa-regular fa-envelope-open"></i>
+                        <span>Say Hello</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <header class="mobile">
+        <nav>
+            <ul class="mobile-nav flex">
+                <li>
+                    <a href="#aboutme" class="activenav">
+                        <i class="fa-solid fa-house"></i>
+                        <span>About Me</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#experience">
+                        <i class="fa-regular fa-eye"></i>
+                        <span>Experience</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#education">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span>Education</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#skills">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span>Skills</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#portfolio">
+                        <i class="fa-solid fa-gem"></i>
+                        <span>Portfolio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#services">
+                        <i class="fa-brands fa-servicestack"></i>
+                        <span>Services</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#footer">
+                        <i class="fa-regular fa-envelope-open"></i>
+                        <span>Say Hello</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-   <div id="menu-btn" class="fas fa-bars"></div>
-
-   <a href="#home" class="logo">Portfolio</a>
-
-   <nav class="navbar">
-      <a href="#home" class="active">home</a>
-      <a href="#about">about</a>
-      <a href="#services">services</a>
-      <a href="#portfolio">portfolio</a>
-      <a href="#contact">contact</a>
-   </nav>
-
-   <div class="follow">
-      <a href="#" class="fab fa-facebook-f"></a>
-      <a href="#" class="fab fa-twitter"></a>
-      <a href="#" class="fab fa-instagram"></a>
-      <a href="#" class="fab fa-linkedin"></a>
-      <a href="#" class="fab fa-github"></a>
-   </div>
-
-</header>
-
-<!-- header section ends -->
-
-<!-- home section starts  -->
-
-<section class="home" id="home">
-
-   <div class="image" data-aos="fade-right">
-      <img src="images/me.jpg" alt="">
-   </div>
-
-   <div class="content">
-      <h3 data-aos="fade-up">hi, i am Ojiego Franklin</h3>
-      <span data-aos="fade-up">web designer & developer</span>
-      <p data-aos="fade-up">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis labore recusandae minima molestias aliquam nostrum.</p>
-      <a data-aos="fade-up" href="#about" class="btn">about me</a>
-   </div>
-
-</section>
-
-<!-- home section ends -->
-
-<!-- about section starts  -->
-
-<section class="about" id="about">
-
-   <h1 class="heading" data-aos="fade-up"> <span>biography</span> </h1>
-
-   <div class="biography">
-
-      <p data-aos="fade-up">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis tenetur amet ab optio minus est error libero adipisci numquam ratione.</p>
-
-      <div class="bio">
-         <h3 data-aos="zoom-in"> <span>name : </span> ojiego franklin </h3>
-         <h3 data-aos="zoom-in"> <span>email : </span> frankzeal33@gmail.com </h3>
-         <h3 data-aos="zoom-in"> <span>address : </span> Abia, Nigeria </h3>
-         <h3 data-aos="zoom-in"> <span>phone : </span> +234-7067654893 </h3>
-         <h3 data-aos="zoom-in"> <span>age : </span> 25 years </h3>
-         <h3 data-aos="zoom-in"> <span>experience : </span> 1+ years </h3>
-      </div>
-
-      <a href="#" class="btn" data-aos="fade-up">download CV</a>
-
-   </div>
-   
-   <div class="skills" data-aos="fade-up">
-
-      <h1 class="heading"> <span>skills</span> </h1>
-
-      <div class="progress">
-         <div class="bar" data-aos="fade-left"> <h3><span>HTML</span> <span>95%</span></h3> </div>
-         <div class="bar" data-aos="fade-right"> <h3><span>CSS</span> <span>80%</span></h3> </div>
-         <div class="bar" data-aos="fade-left"> <h3><span>JavaScript</span> <span>65%</span></h3> </div>
-         <div class="bar" data-aos="fade-right"> <h3><span>PHP</span> <span>80%</span></h3> </div>
-      </div>
-
-   </div>
-
-   <div class="edu-exp">
-
-      <h1 class="heading" data-aos="fade-up"> <span>education & experience</span> </h1>
-
-      <div class="row">
-
-         <div class="box-container">
-
-            <h3 class="title" data-aos="fade-right">education</h3>
-
-            <div class="box" data-aos="fade-right">
-               <span>( 2019 - 2020 )</span>
-               <h3>web designer</h3>
-               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat assumenda, eaque sequi repellat natus quia.</p>
+    <main>
+        <div id="aboutme">
+            <section class="topheader">
+                <div class="container aboutmedata">
+                    <div class="aboutdata flex">
+                        <div class="aboutimg">
+                            <img src="./images/me.jpg" alt="DCodingFinger">
+                        </div>
+                        <div class="aboutinfo">
+                            <h1>Ojiego Franklin</h1>
+                            <h3>Full Stack Web Developer</h3>
+                            <span>LIVE IN NIGERIA</span>
+                            <span class="webdev">WEB DEVELOPER AND PROGRAMMER</span>
+                        </div>
+                        <div class="mouseimg">
+                            <img src="./images/mouse2.png">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="contactsec">
+                <div class="container">
+                    <a data-hash href="#contact" class="contact-info">
+                        <i class="fa-solid fa-headphones"></i>
+                        <span>Contact Information</span>
+                    </a>
+                    <a href="#message">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>Send Message</span>
+                    </a>
+                    <a href="./images/home.jpg" download>
+                        <i class="fa-solid fa-cloud-arrow-down"></i>
+                        <span>Download Resume</span>
+                    </a>
+                </div>
+                <div class="borderbt"></div>
             </div>
+            <div class="detailssec container">
+                <div class="aboutme">
+                    <h2>ABOUT ME</h2> 
+                    <p>Hi, my name is ojiego franklin from Anambra state, Nigeria. I'm a skilled and dedicated full-stack web developer with a Bachelors degree in Computer Engineering with experience in building responsive websites and web applications for big, small and medium sized businesses. My top priority is to get your business online the right way, giving you industry standard design and all the functionality you need to operate smoothly online. Get in touch with the details of your project let's get started.</p>
+                    <p>Building projects my clients love have always been my passion. Being in the web development space for over 2 years. I am always motivated to do more!</p>
+                    <!-- <a href="/">VIEW MORE</a> -->
+                </div>
+                <div class="mobile-aboutimg">
+                    <img src="./images/me.jpg" alt="DCodingFinger">
+                </div>
+                <div class="pdetails">
+                    <h3>Personal Details</h3>
+                    <div class="pdetail flex">
+                        <ul>
+                            <li>
+                                <span>Birthday:</span>
+                                <span>2001 November 3</span>
+                            </li>
+                            <li>
+                                <span>Marital Status:</span>
+                                <span>Single</span>
+                            </li>
+                            <li>
+                                <span>Nationality:</span>
+                                <span>Nigerian</span>
+                            </li>
+                            <li>
+                                <span>Insta:</span>
+                                <span>I'm_frankzeal</span>
+                            </li>
+                            <li>
+                                <span>Phone:</span>
+                                <span>Single</span>
+                            </li>
+                            <li>
+                                <span>Email:</span>
+                                <span>frankzeal33@gmail.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-            <div class="box" data-aos="fade-right">
-               <span>( 2020 - 2021 )</span>
-               <h3>web developer</h3>
-               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat assumenda, eaque sequi repellat natus quia.</p>
             </div>
-
-            <div class="box" data-aos="fade-right">
-               <span>( 2021 - 2022 )</span>
-               <h3>graphic designer</h3>
-               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat assumenda, eaque sequi repellat natus quia.</p>
+        </div>
+        <div id="experience">
+            <div class="container">
+                <h2>EXPERIENCE</h2>
+                <div class="exdata flex">
+                    <div class="threedot">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="threedata">
+                        <article class="expost">
+                            <div class="datainfo">
+                                <div class="ddata">
+                                    <div>
+                                        <span>FROM</span>
+                                        <span>May 2021</span>
+                                    </div>
+                                    <div>
+                                        <span>TO</span>
+                                        <span>oct 2021</span>
+                                    </div>
+                                </div>
+                                <p>(6 MONTHS)</p>
+                            </div>
+                            <div class="postinfo">
+                                <h4>Web Instructor</h4>
+                                <p>formally a web developer intern to web instructor at Bestman Technologies, Umuahia, Abia State.</p>
+                            </div>
+                        </article>
+                        <article class="expost">
+                            <div class="datainfo">
+                                <div class="ddata">
+                                    <div>
+                                        <span>FROM</span>
+                                        <span>May 2022</span>
+                                    </div>
+                                    <div>
+                                        <span>TO</span>
+                                        <span>Jun 2023</span>
+                                    </div>
+                                </div>
+                                <p>(1 YEAR & 1 MONTH)</p>
+                            </div>
+                            <div class="postinfo">
+                                <h4>Software Developer</h4>
+                                <p>Software Developer at Bestman Technologies, Umuahia, Abia State.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
             </div>
-
-         </div>
-
-         <div class="box-container">
-
-            <h3 class="title" data-aos="fade-left">experience</h3>
-
-            <div class="box" data-aos="fade-left">
-               <span>( 2019 - 2020 )</span>
-               <h3>front-end developer</h3>
-               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat assumenda, eaque sequi repellat natus quia.</p>
+        </div>
+        <div id="education">
+            <div class="container">
+                <h2>EDUCATION</h2>
+                <div class="eddata flex">
+                    <div class="edpost">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <h3>Michael Okpara University of Agriculture</h3>
+                        <p>Bachelor of Engineering</p>
+                        <p>(Computer Engineeering)</p>
+                        <p class="grade">First class honours(4.53/5.00)</p>
+                        <span>(2001-2023)</span>
+                    </div>
+                </div>
             </div>
-
-            <div class="box" data-aos="fade-left">
-               <span>( 2020 - 2021 )</span>
-               <h3>back-end developer</h3>
-               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat assumenda, eaque sequi repellat natus quia.</p>
+        </div>
+        <div id="skills">
+            <div class="container">
+                <h2>SKILLS & LANGUAGE</h2>
+                <div class="sl">
+                    <div class="lang flex">
+                        <div class="flang">
+                            <div>
+                                <span>html</span>
+                                <span style="width: 60%;"></span>
+                            </div>
+                            <div>
+                                <span>css</span>
+                                <span style="width: 40%;"></span>
+                            </div>
+                            <div>
+                                <span>sass</span>
+                                <span style="width: 30%;"></span>
+                            </div>
+                            <div>
+                                <span>javascript</span>
+                                <span style="width: 40%;"></span>
+                            </div>
+                            <div>
+                                <span>bootstrap</span>
+                                <span style="width: 100%;"></span>
+                            </div>
+                        </div>
+                        <div class="flang">
+                            <div>
+                                <span>react</span>
+                                <span style="width: 100%;"></span>
+                            </div>
+                            <div>
+                                <span>php</span>
+                                <span style="width: 100%;"></span>
+                            </div>
+                            <div>
+                                <span>nodejs</span>
+                                <span style="width: 50%;"></span>
+                            </div>
+                            <div>
+                                <span>expressjs</span>
+                                <span style="width: 30%;"></span>
+                            </div>
+                            <div>
+                                <span>mysql</span>
+                                <span style="width: 100%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lanbox">
+                        <h3>LANGUAGES</h3>
+                        <ul>
+                            <li><span>ENGLISH:</span> <span>ADVANCED</span></li>
+                            <li><span>IGBO :</span> <span>ADVANCED</span></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-
-            <div class="box" data-aos="fade-left">
-               <span>( 2021 - 2022 )</span>
-               <h3>full-stack developer</h3>
-               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat assumenda, eaque sequi repellat natus quia.</p>
+        </div>
+        <div class="container" class="logos">
+            <marquee scrolldelay="40" truespeed class="boxes">
+                <img src="./images/pngegg-1.png"alt="" style="margin-right: 4rem;" width="80" height="70">
+                <img src="./images/pngegg-2.png"alt="" style="margin-right: 4rem;" width="80" height="70">
+                <img src="./images/pngegg-12.png"alt="" style="margin-right: 4rem;" width="80" height="70">
+                <img src="./images/pngegg-3.png"alt="" style="margin-right: 4rem;" width="80" height="70">
+                <img src="./images/pngegg-4.png"alt="" style="margin-right: 4rem;" width="80" height="70">
+                <img src="./images/pngegg-5.png"alt="" style="margin-right: 4rem;" width="80" height="70">
+                <img src="./images/pngegg-6.png"alt="" style="margin-right: 4rem;" width="80" height="70">
+                <img src="./images/pngegg-7.png"alt="" style="margin-right: 4rem;" width="80" height="70">
+                <img src="./images/pngegg-8.png"alt="" style="margin-right: 4rem;" width="80" height="70">
+                <img src="./images/pngegg-9.png"alt="" style="margin-right: 4rem;" width="100" height="70">
+                <img src="./images/pngegg-10.png"alt="" style="margin-right: 4rem;" width="80" height="70">
+                <img src="./images/pngegg-11.png"alt="" style="margin-right: 4rem;" width="80" height="70">
+            </marquee>
+        </div>
+        <div id="portfolio">
+            <div class="container">
+                <h2>PORTFOLIO</h2>
+                <div class="filters">
+                    <div class="flex filterbtns">
+                        <button class="filter-btn active" data-category="all">SHOW All</button>
+                        <button class="filter-btn" data-category="frontend">FRONTEND</button>
+                        <button class="filter-btn" data-category="react">REACT</button>
+                        <button class="filter-btn" data-category="php">PHP</button>       
+                        <button class="filter-btn" data-category="nodejs">NODE JS</button>
+                    </div>
+                    <div class="cards">
+                        <div class="card" data-category="frontend">
+                            <a href="/">
+                                <img src="./images/travel-thumbnail.png" alt="">
+                                <div class="des">
+                                    <h3>Travel and Tour website</h3>
+                                    <p>Responsive on desktop, tablet, mobile and all screen sizes.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card" data-category="react">
+                            <a href="/">
+                                <img src="./images/img-2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="card" data-category="php">
+                            <a href="/">
+                                <img src="./images/img-3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="card" data-category="nodejs">
+                            <a href="/">
+                                <img src="./images/img-4.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="card" data-category="frontend">
+                            <a href="/">
+                                <img src="./images/img-5.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="card" data-category="react">
+                            <a href="/">
+                                <img src="./images/img-6.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="card" data-category="php">
+                            <a href="/">
+                                <img src="./images/blog1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="card" data-category="nodejs">
+                            <a href="/">
+                                <img src="./images/blog2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="card" data-category="frontend">
+                            <a href="/">
+                                <img src="./images/blog3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="card" data-category="react">
+                            <a href="/">
+                                <img src="./images/blog4.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="card" data-category="php">
+                            <a href="/">
+                                <img src="./images/blog5.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="card" data-category="nodejs">
+                            <a href="/">
+                                <img src="./images/blog6.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div id="services">
+            <div class="container">
+                <h2>PROFESSIONAL SKILLS / SERVICES</h2>
+         
+                <div class="box-container">
+            
+                <div class="box" data-aos="zoom-in">
+                    <i class="fas fa-code"></i>
+                    <h3>Fullstack Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, placeat veritatis accusantium nostrum rem ipsa.</p>
+                </div>
+            
+                <div class="box" data-aos="zoom-in">
+                    <i class="fab fa-bootstrap"></i>
+                    <h3>Frontend Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, placeat veritatis accusantium nostrum rem ipsa.</p>
+                </div>
+            
+                <div class="box" data-aos="zoom-in">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Backend Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, placeat veritatis accusantium nostrum rem ipsa.</p>
+                </div>
+            
+                <div class="box" data-aos="zoom-in">
+                    <i class="fas fa-bullhorn"></i>
+                    <h3>Web Hosting</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, placeat veritatis accusantium nostrum rem ipsa.</p>
+                </div>
+            
+                <div class="box" data-aos="zoom-in">
+                    <i class="fab fa-wordpress"></i>
+                    <h3>web dev mentorship</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, placeat veritatis accusantium nostrum rem ipsa.</p>
+                </div>
 
-         </div>
-
-      </div>
-
-   </div>
-
-</section>
-
-<!-- about section ends -->
-
-<!-- services section starts  -->
-
-<section class="services" id="services">
-
-   <h1 class="heading" data-aos="fade-up"> <span>services</span> </h1>
-
-   <div class="box-container">
-
-      <div class="box" data-aos="zoom-in">
-         <i class="fas fa-code"></i>
-         <h3>web development</h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, placeat veritatis accusantium nostrum rem ipsa.</p>
-      </div>
-
-      <div class="box" data-aos="zoom-in">
-         <i class="fas fa-paint-brush"></i>
-         <h3>graphic design</h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, placeat veritatis accusantium nostrum rem ipsa.</p>
-      </div>
-
-      <div class="box" data-aos="zoom-in">
-         <i class="fab fa-bootstrap"></i>
-         <h3>bootstrap</h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, placeat veritatis accusantium nostrum rem ipsa.</p>
-      </div>
-
-      <div class="box" data-aos="zoom-in">
-         <i class="fas fa-chart-line"></i>
-         <h3>seo marketing</h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, placeat veritatis accusantium nostrum rem ipsa.</p>
-      </div>
-
-      <div class="box" data-aos="zoom-in">
-         <i class="fas fa-bullhorn"></i>
-         <h3>digital marketing</h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, placeat veritatis accusantium nostrum rem ipsa.</p>
-      </div>
-
-      <div class="box" data-aos="zoom-in">
-         <i class="fab fa-wordpress"></i>
-         <h3>wordpress</h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, placeat veritatis accusantium nostrum rem ipsa.</p>
-      </div>
-
-   </div>
-
-</section>
-
-<!-- services section ends -->
-
-<!-- portfolio section starts  -->
-
-<section class="portfolio" id="portfolio">
-
-   <h1 class="heading" data-aos="fade-up"> <span>portfolio</span> </h1>
-
-   <div class="box-container">
-
-      <div class="box" data-aos="zoom-in">
-         <img src="images/img-1.jpg" alt="">
-         <h3>web development</h3>
-         <span>( 2020 - 2022 )</span>
-      </div>
-
-      <div class="box" data-aos="zoom-in">
-         <img src="images/img-2.jpg" alt="">
-         <h3>web development</h3>
-         <span>( 2020 - 2022 )</span>
-      </div>
-
-      <div class="box" data-aos="zoom-in">
-         <img src="images/img-3.jpg" alt="">
-         <h3>web development</h3>
-         <span>( 2020 - 2022 )</span>
-      </div>
-
-      <div class="box" data-aos="zoom-in">
-         <img src="images/img-4.jpg" alt="">
-         <h3>web development</h3>
-         <span>( 2020 - 2022 )</span>
-      </div>
-
-      <div class="box" data-aos="zoom-in">
-         <img src="images/img-5.jpg" alt="">
-         <h3>web development</h3>
-         <span>( 2020 - 2022 )</span>
-      </div>
-
-      <div class="box" data-aos="zoom-in">
-         <img src="images/img-6.jpg" alt="">
-         <h3>web development</h3>
-         <span>( 2020 - 2022 )</span>
-      </div>
-
-   </div>
-
-</section>
-
-<!-- portfolio section ends -->
-
-<!-- contact section starts  -->
-
-<section class="contact" id="contact">
-
-   <h1 class="heading" data-aos="fade-up"> <span>contact me</span> </h1>
-
-   <form action="" method="post">
-      <div class="flex">
-         <input data-aos="fade-right" type="text" name="name" placeholder="enter your name" class="box" required>
-         <input data-aos="fade-left" type="email" name="email" placeholder="enter your email" class="box" required>
-      </div>
-      <input data-aos="fade-up" type="number" min="0" name="number" placeholder="enter your number" class="box" required>
-      <textarea data-aos="fade-up" name="message" class="box" required placeholder="enter your message" cols="30" rows="10"></textarea>
-      <input type="submit" data-aos="zoom-in" value="send message" name="send" class="btn">
-   </form>
-
-   <div class="box-container">
-
-      <div class="box" data-aos="zoom-in">
-         <i class="fas fa-phone"></i>
-         <h3>phone</h3>
-         <p>+234-7067654893</p>
-      </div>
-
-      <div class="box" data-aos="zoom-in">
-         <i class="fas fa-envelope"></i>
-         <h3>email</h3>
-         <p>frankzeal33@gmail.com</p>
-      </div>
-
-      <div class="box" data-aos="zoom-in">
-         <i class="fas fa-map-marker-alt"></i>
-         <h3>address</h3>
-         <p>Abia, Nigeria - 400104</p>
-      </div>
-
-   </div>
-
-</section>
-
-<!-- contact section ends -->
-
-<div class="credit"> &copy; copyright @ 2022 by <span>mr. ojiego franklin</span> </div>
+                <div class="box" data-aos="zoom-in">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>graphic design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, placeat veritatis accusantium nostrum rem ipsa.</p>
+                </div>
+            
+                </div>
+            </div>
+        </div>
+        <footer id="sayhello">
+            <div class="footer" id="footer">
+                <div class="leftsec">
+                    <div>
+                        <h2>SAY HELLO</h2>
+                        <form>
+                            <input type="text" placeholder="YOUR NAME" required>
+                            <input type="email" placeholder="YOUR EMAIL" required>
+                            <input type="subject" placeholder="SUBJECT" required>
+                            <textarea placeholder="MESSAGE"></textarea>
+                            <button>SUBMIT</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="rightsec">
+                    <div class="social">
+                       <a href="">
+                            <div class="box">
+                                <i class="fa-regular fa-envelope"></i>
+                                <div>
+                                    <span>EMAIL</span>
+                                    <p>frankzeal@gmail.com</p>
+                                </div>
+                            </div>
+                       </a>
+                        <a href="">
+                            <div class="box">
+                                <i class="fa-solid fa-phone"></i>
+                                <div>
+                                    <span>PHONE NO</span>
+                                    <p>+2348178740844</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="box">
+                                <i class="fa-brands fa-x-twitter"></i>
+                                <div>
+                                    <span>TWITTER</span>
+                                    <p>Ojiego Franklin</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="box">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <div>
+                                    <span>WHAPSAPP</span>
+                                    <p>+2348178740844</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="box">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <div>
+                                    <span>FACEBOOK</span>
+                                    <p>Ojiego Frankzeal</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="box">
+                                <i class="fa-brands fa-instagram"></i>
+                                <div>
+                                    <span>INSTAGRAM</span>
+                                    <p>I_am_frankzeal</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="box">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                                <div>
+                                    <span>LINKEDIN</span>
+                                    <p>Ojiego Franklin</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright"><p class="container">&copy; copyright 2023, All Rights Reserved | <a href="/">Ojiego Franklin</a></p></div>
+        </footer>
+    </main>
+    <a href="#aboutme" class="go-to-top"><i class="fa-solid fa-arrow-up"></i></a>
 
 
 
 
-
-
-
-
-
-
-
-
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
-
-<!-- aos js link  -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-
-<script>
-
-   AOS.init({
-      duration:800,
-      delay:300
-   });
-
-</script>
-   
+<script src="https://cdn.jsdelivr.net/npm/framer-motion@10.17.0/dist/framer-motion.min.js"></script>
+<script src="./js/script.js"></script> 
 </body>
 </html>
