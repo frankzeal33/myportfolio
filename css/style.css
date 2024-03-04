@@ -20,11 +20,12 @@ html{
     --color-gray-300: #52528f;
     --color-gray-700: #252542;
     --color-yellow: #ffb116;
-    --theme-opacity: #07071a;
+    --theme-opacity: #07071a;   
+}
 
-    
-    
-    
+.typed-cursor {
+    font-size: 25px !important;
+    color: var(--color-white) !important;
 }
 
 ::-webkit-scrollbar{
@@ -359,6 +360,12 @@ main{
     margin-bottom: 80px;
 }
 
+.aboutinfo h4{
+     margin-bottom: 7px;
+     font-size: 18px;
+     font-weight: 400;
+}
+
 .aboutinfo h1{
     font-size: 50px;
     font-weight: 600;
@@ -373,8 +380,13 @@ main{
     letter-spacing: -0.5px;
     line-height: 1;
     font-weight: 400;
-    margin-bottom: 20px;
     text-transform: capitalize;
+}
+
+.aboutinfo div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .aboutinfo span{
@@ -1159,7 +1171,7 @@ main{
     .bars .fa-bars.active{
         display: none;
     }
-    
+
     .desktop{
         display: none;
     }
