@@ -1018,7 +1018,7 @@ main{
  .rightsec .social .box{
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: .5rem;
  }
 
  .rightsec .social .box div{
