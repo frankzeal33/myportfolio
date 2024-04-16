@@ -265,7 +265,7 @@ main{
 .aboutimg{
     position: relative;
     overflow: hidden;
-    width: 250px;
+    width: 220px;
     height: 293px;
     padding: 6px;
     background: var(--color-white);
