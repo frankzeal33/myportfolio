@@ -886,7 +886,6 @@ main{
     gap:1rem;
     align-items: flex-start;
     margin-top: 2rem;
-    grid-auto-rows: 1fr;
  }
  
  #services .box-container .box{
