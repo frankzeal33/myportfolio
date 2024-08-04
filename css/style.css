@@ -827,7 +827,7 @@ main{
 .cards{
     margin-top: 1.5rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 10rem));
     justify-content: center;
     gap: 1rem;
 }
@@ -886,6 +886,7 @@ main{
     gap:1rem;
     align-items: flex-start;
     margin-top: 2rem;
+    grid-auto-rows: 1fr;
  }
  
  #services .box-container .box{
