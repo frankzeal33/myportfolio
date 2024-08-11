@@ -461,6 +461,7 @@ main{
     color: var(--color-gray-300);
     line-height: 26px;
     margin: 0 0 10px;
+    text-align: justify;
 }
 
 .aboutme a{
