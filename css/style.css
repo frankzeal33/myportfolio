@@ -917,6 +917,7 @@ main{
     line-height: 1.2;
     font-size: 15px;
     color: var(--color-gray-300);
+     text-align: justify;
  }
  
  #services .box-container .box:hover{
